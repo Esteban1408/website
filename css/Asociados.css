@@ -1,0 +1,89 @@
+nav,header,footer,section,aside{
+ display:block;
+}
+body{text-align: center;
+	min-height:50vh;
+	background-image: url(https://i.pinimg.com/originals/11/a1/f4/11a1f470cdde36a5095cd504d763699f.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+
+}
+#REGRESAR #rEGRESAR{
+	text-decoration:none;
+	width:100px;
+	height:100px;
+	position:fixed;
+	top:0;
+	right:0;
+	z-index: 1000;
+	
+}
+#rEGRESAR{
+	width:250px;
+	padding: 5px;
+	margin: center;
+	border-radius:2em;
+}
+#Dentista{
+	width:350px;
+	position: center;
+	margin:center;
+	padding:10px;
+	border-radius:2em;
+	overflow: hidden;
+	transition: 0.5s;
+	letter-spacing: 3px;
+}
+#Parte1{
+	position:relative;
+	width:350px;
+	padding: 50px;
+	z-index:2;
+	background:linear-gradient(235deg,#ff005e,#010615,#2196F3);
+	border-radius: 60px;
+
+}
+#Dentista:hover{
+	background: #03e9f4;
+	color:#050801;
+	box-shadow: 0 0 5px #03e9f4,
+				0 0 10px #03e9f4,
+				0 0 20px #03e9f4,
+				0 0 40px #03e9f4;
+	filter:hue-rotate(110deg);
+			}
+
+
+.Asociados{
+	width:500px;
+	margin:auto;
+	position:center;
+	text-align: center;
+	cursor:default;
+	margin: auto;
+}
+.Asociados li{
+	list-style:none;
+	display:inline-block;
+	cursor:default;
+	
+}
+.Principal{
+	color:white;
+	position:center;
+	text-decoration: none;
+}
+.sub{
+	color:white;
+	position:center;
+}
+@keyframes animate{
+	0%{
+		filter:hue-rotate(0deg);
+	}
+	100%{
+		filter:hue-rotate(360deg);
+	}
+}

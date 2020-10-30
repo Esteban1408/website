@@ -1,0 +1,220 @@
+nav,header,footer,section,aside{
+ display:block;
+}
+body{text-align: center;
+	min-height:100vh;
+	background-image: url(https://i.pinimg.com/originals/11/a1/f4/11a1f470cdde36a5095cd504d763699f.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+
+#rEGRESAR{
+	width:250px;
+	padding: 5px;
+	margin: center;
+}
+#REGRESAR #rEGRESAR{
+	text-decoration:none;
+	width:100px;
+	height:100px;
+	position:fixed;
+	top:0;
+	right:0;
+	z-index: 1000000;
+	
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Poppins", sans-serif;
+}
+.container{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 1200px;
+
+}
+/*Color de la tarjeta*/
+.container .card{
+
+	position:relative;
+	width:300px;
+	height:430px;
+	margin:20px;
+	background:#232323;
+	border-radius:20px;
+	overflow:hidden;
+}
+	
+/*Circulo*/
+.container .card:before{
+	content:"";
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#Cd5360;
+	clip-path: circle(200px at 50% 110%);
+	transition:0.5s ease-in-out;
+}
+.container .card:hover{
+	height: 420px;
+}
+.container .card:hover:before{
+	clip-path:circle(150px at 50% 80%);
+	
+}
+.container .card:after{
+	content:"";
+	position:absolute;
+	top:90%;
+	left:0%;
+	font-size: 40em;
+	font-weight:1000;
+	font-style:italic;
+	color:rgba(255,255,255,0.04);
+}
+.container .card .imgBx{
+	position:absolute;
+	top:50%;
+	transform:translateY(-60%);
+	z-index:10000;
+	width:100%;
+	height:250px;
+	transition:0.5s;
+}
+.container .card:hover .imgBx{
+	top:0%;
+	transform:translateY(0%);
+}
+/*------Imagenes-----*/
+.container .card .imgBx img{
+	position:absolute;
+	top:40%;
+	left:50%;
+	transform:translate(-50%,-60%) rotate(0deg);
+	width: 250px;
+	border-radius: 20px;
+}
+.container .card .contentBx{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:100px;
+	text-align:center;
+	transition:1s;
+	z-index:10;
+}
+.container .card:hover .contentBx{
+	height:210px;
+}
+.container .card .contentBx h2{
+	position:relative;
+	font-weight:600px;
+	Letter-spacing:1px;
+	color:#fff;
+}
+.container .card .contentBx .size,
+.container .card .contentBx .color{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	padding:8px 30px;
+	transition:0.5s;
+	opacity:0;
+	visibility:hidden:
+}
+
+.container .card:hover .contentBx .size{
+	opacity:1;
+	visibility:visible;
+	transition-delay:0.5s;
+}
+.container .card:hover .contentBx .color{
+	opacity:1;
+	visibility:visible;
+	transition-delay:0.6s;
+}
+.container .card .contentBx .size .sublista,
+.container .card .contentBx .color .sublista{
+	font-size:5px;
+}
+.container .card .contentBx .size h3,
+.container .card .contentBx .color h3{
+	color:#fff;
+	font-weight:300;
+	font-size: 14px;
+	text-transform:uppercase;
+	Letter-spacing: 2px;
+	margin-right:10px:
+}
+.container .card .contentBx .size span{
+	width:26px;
+	height:26px;
+	text-align:center;
+	Line-height:26px;
+	font.size:14px;
+	display: inline-block;
+	color:#111;
+	background:#fff;
+	margin: 0 5px;
+	transition:0.5s;
+	color:#111;
+	border-radius:4px;
+	cursor: pointer;
+}
+.container .card .contentBx .size span:hover{
+	background:#9bdc28;
+	
+}
+.container .card .contentBx .color span{
+	width:20px;
+	height:20px;
+	background:#ff0;
+	border-radius:50%;
+	margin:0 5px;
+	cursor:pointer;
+
+}
+.container .card .contentBx .color span:nth-child(2){
+	background:#9bdc28;
+}
+.container .card .contentBx .color span:nth-child(3){
+	background:#03a9f4;
+}
+.container .card .contentBx .color span:nth-child(4){
+	background:#e91e63;
+}
+.container .card .contentBx a{
+	display:inline-block;
+	padding: 10px 20px;
+	width:100px;
+	background: #fff;
+	border-radius:4px;
+	margin-top:10;
+	/*font-weight:700px;*/
+	font-size: 25px;
+	color:#111;
+	opacity:0;
+	transform:translateY(50px);
+	transition:0.5s;
+}
+.container .card:hover .contentBx a{
+	opacity:1;
+	transform:translateY(0px);
+	transition-delay:0.75s;
+	
+}
